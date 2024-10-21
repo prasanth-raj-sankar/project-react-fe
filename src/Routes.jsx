@@ -5,11 +5,13 @@ import StudentLogin from './pages/StudentLogin';
 import AdminLogin from './pages/AdminLogin';
 import StudentDashboard from './pages/StudentDashboard';
 import AdminDashboard from './pages/AdminDashboard';
-import StudentRegister from './pages/Studentregister.jsx';
+// import StudentRegister from './pages/Studentregister.jsx';
+import StudentRegister from './pages/Studentregister';
 import SubjectManagement from './pages/SubjectManagement';
 import ExamManagement from './pages/ExamManagement';
 import AddQuestion from './pages/AddQuestion';
-import QuestionList from './pages/QuestionList.jsx';
+// import QuestionList from './pages/QuestionList.jsx';
+import QuestionList from './pages/QuestionList';
 import ExamPage from './pages/ExamPage';
 import ResultPage from './pages/ResultPage';
 
