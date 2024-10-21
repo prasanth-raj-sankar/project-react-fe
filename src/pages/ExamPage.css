@@ -1,0 +1,73 @@
+/* Container for the entire exam page */
+.exam-page {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title styling for the exam subject */
+  .exam-page h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Style for each question block */
+  .question-block {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Question heading (name) */
+  .question-block h3 {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  /* Styling for the options container */
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Label styling for the options */
+  .options label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Radio button styling */
+  .options input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #4CAF50; /* Change the color of the radio button */
+  }
+  
+  /* Hover effect for options */
+  .options label:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  /* Styling for when there are no questions */
+  .exam-page p {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-top: 50px;
+    font-family: 'Arial', sans-serif;
+  }
+  

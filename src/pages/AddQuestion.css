@@ -1,0 +1,107 @@
+.add-question-form {
+    padding: 20px;
+    background-color: #f9f9f9;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-question-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .add-question-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .add-question-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .add-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .go-back-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-btn:hover, .go-back-btn:hover {
+    opacity: 0.8;
+  }
+  
+
+  /* Styling for the question list */
+.questions-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.questions-list li {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Question name styling */
+.questions-list li strong {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Options and correct answer styling */
+.questions-list li div {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Edit and Delete buttons styling */
+.questions-list button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.questions-list button:hover {
+    background-color: #555;
+}
+
+
+.questions-list button:focus, .form-buttons .add-btn:focus, .form-buttons .go-back-btn:focus {
+    outline: none;
+}
