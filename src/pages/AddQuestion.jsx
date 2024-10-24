@@ -21,7 +21,8 @@ const AddQuestion = () => {
 
   const fetchQuestions = async () => {
     try {
-      const response = await fetch('http://localhost:4500/questions/get-questions'); // Replace 'maths' with the correct subject
+      // const response = await fetch('http://localhost:4500/questions/get-questions'); // Replace 'maths' with the correct subject
+      const response = await fetch('https://project-be-qpt1.onrender.com/questions/get-questions'); // Replace 'maths' with the correct subject
       const data = await response.json();
       setQuestions(data);
     } catch (error) {
@@ -47,7 +48,9 @@ const AddQuestion = () => {
       try {
         if (editingId) {
           // Update existing question
-          const response = await fetch(`http://localhost:4500/questions/update-question/${editingId}`, {
+          // const response = await fetch(`http://localhost:4500/questions/update-question/${editingId}`, {
+            const response = await fetch(`https://project-be-qpt1.onrender.com/questions/update-question/${editingId}`, {
+         
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json',
@@ -73,7 +76,8 @@ const AddQuestion = () => {
           }
         } else {
           // Add new question
-          const response = await fetch('http://localhost:4500/questions/add-question', {
+          const response = await fetch('https://project-be-qpt1.onrender.com/questions/add-question', {
+            // const response = await fetch('http://localhost:4500/questions/add-question', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -123,7 +127,8 @@ const AddQuestion = () => {
   const handleDeleteQuestion = async (id) => {
     if (window.confirm('Are you sure you want to delete this question?')) {
       try {
-        const response = await fetch(`http://localhost:4500/questions/delete-question/${id}`, {
+        const response = await fetch(`https://project-be-qpt1.onrender.com/questions/delete-question/${id}`, {
+          // const response = await fetch(`http://localhost:4500/questions/delete-question/${id}`, {
           method: 'DELETE',
         });
 

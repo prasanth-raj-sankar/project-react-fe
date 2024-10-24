@@ -1,4 +1,5 @@
-const BE_URL = 'http://localhost:4500'; // Backend URL
+// const BE_URL = 'http://localhost:4500'; // Backend URL
+const BE_URL = 'https://project-be-qpt1.onrender.com'; // Backend URL
 
 // Create User API
 export const createStudentAPI = async (userDetails) => {

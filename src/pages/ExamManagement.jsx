@@ -15,7 +15,7 @@ const ExamManagement = () => {
   // Fetch exams from the backend
   const fetchExams = async () => {
     try {
-      const response = await fetch("http://localhost:4500/exams/get-exams");
+      const response = await fetch("https://project-be-qpt1.onrender.com/exams/get-exams");
       const data = await response.json();
       setExams(data);
     } catch (error) {
@@ -31,7 +31,7 @@ const ExamManagement = () => {
   const handleAddExam = async () => {
     if (newExam.subjectName && newExam.examDesc) {
       try {
-        const response = await fetch("http://localhost:4500/exams/add-exam", {
+        const response = await fetch("https://project-be-qpt1.onrender.com/exams/add-exam", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -70,7 +70,7 @@ const ExamManagement = () => {
     if (window.confirm("Are you sure you want to delete this exam?")) {
       try {
         const response = await fetch(
-          `http://localhost:4500/exams/delete-exam/${examId}`,
+          `https://project-be-qpt1.onrender.com/exams/delete-exam/${examId}`,
           {
             method: "DELETE",
           }

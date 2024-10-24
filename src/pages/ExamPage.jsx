@@ -13,7 +13,7 @@ const ExamPage = () => {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const response = await fetch(`http://localhost:4500/questions/get-questions/${normalizedSubject}`);
+        const response = await fetch(`https://project-be-qpt1.onrender.com/questions/get-questions/${normalizedSubject}`);
         const data = await response.json();
         setQuestions(data);
       } catch (error) {
@@ -35,7 +35,7 @@ const ExamPage = () => {
   const handleSubmitExam = async () => {
     try {
       console.log('Submitting exam answers:', answers);
-      const response = await fetch(`http://localhost:4500/exams/submit`, {
+      const response = await fetch(`https://project-be-qpt1.onrender.com/exams/submit`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
