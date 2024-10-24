@@ -6,7 +6,7 @@ import AdminLogin from './pages/AdminLogin';
 import StudentDashboard from './pages/StudentDashboard';
 import AdminDashboard from './pages/AdminDashboard';
 // import StudentRegister from './pages/Studentregister.jsx';
-import StudentRegister from './pages/Studentregister';
+import StudentRegister from './pages/StudentRegister'
 import SubjectManagement from './pages/SubjectManagement';
 import ExamManagement from './pages/ExamManagement';
 import AddQuestion from './pages/AddQuestion';
