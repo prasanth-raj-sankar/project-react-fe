@@ -207,6 +207,9 @@ const ExamManagement = () => {
           >
             Close
           </button>
+          <button className="go-back-btn" onClick={() => window.history.back()}>
+          Go back
+        </button>
         </div>
       </div>
     </div>
