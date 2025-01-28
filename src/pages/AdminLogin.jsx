@@ -71,6 +71,12 @@ const AdminLogin = () => {
             Login
           </button>
         </form>
+        <div className="mt-3 text-center">
+          <p>
+            Email:admin@example.com
+            password:Admin@123
+          </p>
+        </div>
       </div>
     </div>
   );
