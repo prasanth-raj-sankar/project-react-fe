@@ -11,7 +11,7 @@ const Student = () => {
   return (
     <div className="card-one" onClick={handleStudentClick} style={{ cursor: 'pointer' }}>
       <img src="https://cdn-icons-png.flaticon.com/512/201/201818.png" alt="Student" />
-      <h2>Student</h2>
+      <h2>Login</h2>
     </div>
   );
 };

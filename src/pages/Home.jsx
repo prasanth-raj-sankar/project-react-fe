@@ -1,17 +1,16 @@
 // import React from 'react';
 import Student from '../components/Student';
-import Admin from '../components/Admin';
+// import Admin from '../components/Admin';
 import '../styles/Home.css'; // Ensure this path is correct
 
 const Home = () => {
   return (
     <div className="home">
       <header className="header">
-        <h1 style={{color:"#fff"}}>Online Exam System</h1>
+        <h1 style={{color:"#fff"}}>Blogs</h1>
       </header>
       <div className="container">
         <Student />
-        <Admin />
       </div>
     </div>
   );

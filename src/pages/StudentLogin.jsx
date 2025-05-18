@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { studentLoginAPI } from "../apis"; // Assuming you have a student login API
-import './StudentDashboard.css';
+// import './StudentDashboard.css';
+import './BlogsHome.css';
+
 
 const StudentLogin = () => {
   const isAuthenticated = Boolean(localStorage.getItem("student"));
@@ -16,7 +18,8 @@ const StudentLogin = () => {
       const response = await studentLoginAPI({ email, password });
       alert(response.msg);
       localStorage.setItem("student", JSON.stringify(response.student));
-      navigate("/student-dashboard"); // Redirect to student dashboard after login
+      // navigate("/student-dashboard"); // Redirect to student dashboard after login
+      navigate("/Blogs-Home"); // Redirect to student dashboard after login
     } catch (e) {
       console.log("error", e);
       alert(e.message);
@@ -24,7 +27,7 @@ const StudentLogin = () => {
   };
 
   if (isAuthenticated) {
-    return <Navigate to="/student-dashboard" />; // Redirect if already logged in
+    return <Navigate to="/Blogs-Home" />; // Redirect if already logged in
   }
 
   return (

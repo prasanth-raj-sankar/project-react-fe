@@ -1,0 +1,85 @@
+.add-blog-wrapper {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+  }
+  
+  h2, h3 {
+    margin-bottom: 20px;
+  }
+  
+  .blog-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+  
+  .blog-form input,
+  .blog-form textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .blog-form textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .blog-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 10px;
+    width: fit-content;
+  }
+  
+  .blog-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .blog-card {
+    background: #f8f8f8;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .blog-card img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+    border-radius: 6px;
+  }
+  
+  .card-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .card-buttons button {
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .card-buttons button:hover {
+    opacity: 0.9;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  

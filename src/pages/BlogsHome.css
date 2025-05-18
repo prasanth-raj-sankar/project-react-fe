@@ -1,4 +1,90 @@
-/* StudentDashboard.css */
+.blogs-page {
+    font-family: Arial, sans-serif;
+    margin-bottom: 511px;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(to right, #036, #9b59b6);
+    color: white;
+  }
+  
+  .nav-menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .nav-menu a,
+  .logout-button {
+    color: white;
+    text-decoration: none;
+    border: none;
+    background-color: orange;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .blog-list {
+    padding: 30px;
+  }
+  
+  .blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .blog-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .blog-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+  }
+  
+  .blog-image {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+  
+  .blog-desc {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .blog-card button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* StudentDashboard.css */
 .student-dashboard {
     text-align: center;
     /* margin: 20px; */

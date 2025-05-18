@@ -1,14 +1,15 @@
 import { useState } from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { createStudentAPI } from "../apis"; // Assuming you have an API for creating students
-import './StudentDashboard.css';
+// import './StudentDashboard.css';
+import './BlogsHome.css';
 
-const StudentRegister = () => {
+const BlogRegister = () => {
   const isAuthenticated = Boolean(localStorage.getItem("student"));
   const [data, setData] = useState({
     name: "",
     email: "",
-    phone: "",
+    // phone: "",
     password: "",
     confirmPassword: "",
   });
@@ -40,7 +41,7 @@ const StudentRegister = () => {
   };
 
   if (isAuthenticated) {
-    return <Navigate to="/student-dashboard" />; // Redirect if already authenticated
+    return <Navigate to="/Blogs-Home" />; // Redirect if already authenticated
   }
 
   return (
@@ -60,7 +61,7 @@ const StudentRegister = () => {
               required
             />
           </div>
-          <div className="form-group mb-3">
+          {/* <div className="form-group mb-3">
             <label>Phone</label>
             <input
               type="tel"
@@ -71,7 +72,7 @@ const StudentRegister = () => {
               onChange={handleChange}
               required
             />
-          </div>
+          </div> */}
           <div className="form-group mb-3">
             <label>Email</label>
             <input
@@ -122,4 +123,4 @@ const StudentRegister = () => {
   );
 };
 
-export default StudentRegister;
+export default BlogRegister;
